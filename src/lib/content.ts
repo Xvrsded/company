@@ -2,82 +2,82 @@ import { CompanyContent } from '@/types/content';
 
 export const fallbackContent: CompanyContent = {
   hero: {
-    badge: 'Konsultan Pajak & Legalitas Bisnis',
-    title: 'Pendampingan Pajak, Akuntansi, dan Legalitas untuk Bisnis Anda',
+    badge: 'Technology Consulting & Product Engineering',
+    title: 'Modern Technology Solutions for Your Business Growth',
     subtitle:
-      'Kami membantu UMKM dan perusahaan membangun fondasi usaha yang rapi, patuh regulasi, dan siap bertumbuh berkelanjutan.',
-    primaryCta: 'Konsultasi Sekarang',
-    secondaryCta: 'Lihat Layanan'
+      'We help startups and enterprises build scalable digital products, optimize engineering workflows, and accelerate innovation with measurable outcomes.',
+    primaryCta: 'Book a Consultation',
+    secondaryCta: 'Explore Services'
   },
   metrics: [
-    { label: 'Klien Ditangani', value: '120+' },
-    { label: 'Laporan/Bulan', value: '500+' },
-    { label: 'Tim Profesional', value: '15+' },
-    { label: 'Tahun Pengalaman', value: '8+' }
+    { label: 'Projects Delivered', value: '120+' },
+    { label: 'Deployments / Month', value: '500+' },
+    { label: 'Tech Specialists', value: '15+' },
+    { label: 'Years of Experience', value: '8+' }
   ],
   features: [
     {
-      title: 'Pajak & Akuntansi',
+      title: 'Cloud Architecture & DevOps',
       description:
-        'Pengelolaan pembukuan, pelaporan pajak berkala, hingga penyusunan laporan keuangan yang rapi dan sesuai ketentuan.',
+        'Designing resilient cloud infrastructure, CI/CD pipelines, and observability systems for high-performance applications.',
       tag: 'Core Service'
     },
     {
-      title: 'Pelatihan Pajak',
+      title: 'AI & Data Solutions',
       description:
-        'Program pelatihan praktis untuk tim internal agar memahami proses perpajakan, administrasi, dan kepatuhan usaha.',
+        'Building intelligent workflows, analytics dashboards, and machine-learning features that support business decisions.',
       tag: 'Training'
     },
     {
-      title: 'Layanan Legalitas',
+      title: 'Custom Web & App Development',
       description:
-        'Pendampingan pembuatan badan usaha, perubahan data perusahaan, dan pengurusan dokumen legal untuk kebutuhan operasional.',
+        'Creating modern web platforms and mobile applications with a strong focus on UX, speed, and maintainability.',
       tag: 'Legal'
     },
     {
-      title: 'Pendampingan Berkala',
+      title: 'Managed Technology Support',
       description:
-        'Skema pendampingan bulanan agar kewajiban administrasi dan perpajakan berjalan konsisten tanpa mengganggu fokus bisnis.',
+        'Continuous technical support, performance monitoring, and proactive optimization to keep your systems reliable.',
       tag: 'Support'
     },
     {
-      title: 'Konsultasi Strategi Kepatuhan',
+      title: 'Technology Strategy Consulting',
       description:
-        'Saran taktis untuk menekan risiko, meningkatkan efisiensi biaya, dan memastikan proses bisnis patuh regulasi.',
+        'Strategic guidance to reduce technical risk, improve engineering efficiency, and align product roadmaps with goals.',
       tag: 'Consulting'
     }
   ],
   storySteps: [
     {
-      title: 'Analisis Kebutuhan Bisnis',
-      description: 'Kami memetakan kondisi perpajakan, pembukuan, dan legalitas agar solusi yang diberikan tepat sasaran.'
+      title: 'Discovery & Technical Assessment',
+      description: 'We analyze product goals, system architecture, and bottlenecks to define a clear implementation path.'
     },
     {
-      title: 'Implementasi & Pendampingan',
-      description: 'Tim kami mengeksekusi proses administrasi dan laporan dengan standar kerja yang terukur dan transparan.'
+      title: 'Build & Implementation',
+      description: 'Our team executes development, integration, and rollout with transparent milestones and quality standards.'
     },
     {
-      title: 'Monitoring & Evaluasi Rutin',
-      description: 'Hasil kerja dievaluasi berkala untuk menjaga kepatuhan, ketepatan laporan, dan keberlanjutan operasional.'
+      title: 'Monitoring & Continuous Improvement',
+      description: 'We continuously evaluate performance, security, and user feedback to sustain long-term product growth.'
     }
   ],
   testimonials: [
     {
       quote:
-        'Pendampingannya jelas dan responsif. Kami jadi lebih tenang karena laporan pajak dan pembukuan tersusun lebih rapi.',
-      name: 'Dina Prameswari',
-      role: 'Owner, UMKM Retail'
+        'Their engineering team is fast, structured, and highly collaborative. Our product release cycle is now much smoother.',
+      name: 'Emily Carter',
+      role: 'Product Lead, Fintech Startup'
     },
     {
       quote:
-        'Tim sangat membantu proses legalitas perusahaan kami dari awal hingga selesai. Prosesnya cepat dan komunikatif.',
-      name: 'Rafi Kurniawan',
-      role: 'Direktur, PT Jaya Persada'
+        'From architecture review to deployment automation, they helped us modernize our platform with measurable impact.',
+      name: 'Michael Tan',
+      role: 'CTO, Enterprise Solutions Co.'
     }
   ],
   cta: {
-    title: 'Butuh partner pajak dan legalitas yang bisa diandalkan?',
-    subtitle: 'Hubungi tim kami untuk konsultasi awal dan rencana pendampingan yang sesuai kebutuhan usaha Anda.',
-    button: 'Hubungi Tim Kami'
+    title: 'Need a reliable technology partner for your next growth phase?',
+    subtitle: 'Talk to our team to plan a practical roadmap for product development, infrastructure, and scaling.',
+    button: 'Contact Our Team'
   }
 };

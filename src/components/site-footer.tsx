@@ -1,11 +1,11 @@
 import Link from 'next/link';
 
 const footerLinks = [
-  { href: '/', label: 'Beranda' },
-  { href: '/about', label: 'Tentang Kami' },
-  { href: '/services', label: 'Layanan' },
-  { href: '/industries', label: 'Bidang Usaha' },
-  { href: '/contact', label: 'Kontak' }
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/services', label: 'Services' },
+  { href: '/industries', label: 'Industries' },
+  { href: '/contact', label: 'Contact' }
 ];
 
 export function SiteFooter() {
@@ -22,8 +22,8 @@ export function SiteFooter() {
                 Your Company
               </div>
               <p className="mt-3 max-w-xl text-sm text-muted sm:text-base">
-                Partner profesional untuk kebutuhan perpajakan, pembukuan, pelatihan, dan legalitas bisnis yang
-                modern.
+                A modern technology partner for cloud engineering, AI solutions, product development, and digital
+                transformation.
               </p>
             </div>
 
@@ -40,7 +40,7 @@ export function SiteFooter() {
 
           <div className="flex flex-col gap-2 text-xs text-muted sm:flex-row sm:items-center sm:justify-between sm:text-sm">
             <p>© {new Date().getFullYear()} Your Company. All rights reserved.</p>
-            <p className="footer-pulse">Dibangun dengan pendekatan elegan, cepat, dan terukur.</p>
+            <p className="footer-pulse">Built with an elegant, fast, and measurable delivery approach.</p>
           </div>
         </section>
       </div>

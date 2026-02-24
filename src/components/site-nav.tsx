@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
 const navItems = [
-  { href: '/', label: 'Beranda' },
-  { href: '/about', label: 'Tentang' },
-  { href: '/services', label: 'Layanan' },
-  { href: '/industries', label: 'Bidang Usaha' },
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/services', label: 'Services' },
+  { href: '/industries', label: 'Industries' },
   { href: '/contact', label: 'Contact' }
 ];
 

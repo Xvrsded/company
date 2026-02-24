@@ -9,27 +9,27 @@ export default async function ServicesPage() {
   await routeLoadingDelay();
   const services = [
     {
-      title: 'Pajak & Akuntansi',
-      desc: 'Pelaporan pajak dan pembukuan bisnis secara akurat sesuai ketentuan terbaru.',
-      items: ['PPh & PPN periodik', 'Laporan keuangan bulanan', 'Review kepatuhan regulasi']
+      title: 'Cloud & DevOps Engineering',
+      desc: 'Scalable cloud architecture, CI/CD pipelines, and infrastructure automation for high-velocity teams.',
+      items: ['Cloud migration & optimization', 'CI/CD implementation', 'Observability & reliability monitoring']
     },
     {
-      title: 'Pelatihan Pajak',
-      desc: 'Pelatihan praktis untuk individu dan perusahaan agar paham kewajiban perpajakan harian.',
-      items: ['Kelas internal tim finance', 'Pelatihan owner/management', 'Modul praktik kasus nyata']
+      title: 'AI & Data Solutions',
+      desc: 'Practical AI and analytics solutions to improve operations, customer insight, and business decision-making.',
+      items: ['Data platform architecture', 'Applied AI workflows', 'Executive analytics dashboards']
     },
     {
-      title: 'Layanan Legalitas',
-      desc: 'Bantuan pendirian badan usaha dan pengurusan dokumen legal secara cepat dan terpercaya.',
-      items: ['Pendirian CV/PT/Yayasan', 'Perubahan data perusahaan', 'Dokumen perizinan pendukung']
+      title: 'Product Development',
+      desc: 'End-to-end development for web and mobile products with modern UX and maintainable code quality.',
+      items: ['Full-stack web apps', 'Mobile app development', 'Product performance optimization']
     }
   ];
 
   const workflow = [
-    'Konsultasi kebutuhan bisnis dan target.',
-    'Penyusunan proposal layanan & timeline.',
-    'Eksekusi oleh tim specialist dan monitoring progres.',
-    'Evaluasi berkala dengan rekomendasi perbaikan.'
+    'Discovery session to align goals, constraints, and technical priorities.',
+    'Solution blueprint and execution timeline planning.',
+    'Implementation by specialist team with transparent progress tracking.',
+    'Continuous review with optimization recommendations.'
   ];
 
   return (
@@ -40,31 +40,31 @@ export default async function ServicesPage() {
         <section className="rounded-3xl border border-border/70 bg-card/55 p-8 shadow-glass backdrop-blur-2xl sm:p-12">
           <div className="inline-flex items-center gap-2 rounded-full border border-primary/35 bg-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-primary">
             <span className="status-dot" />
-            Layanan Kami
+            Our Services
           </div>
-          <h1 className="mt-3 text-4xl font-bold sm:text-5xl">Tiga layanan utama untuk kebutuhan bisnis modern</h1>
+          <h1 className="mt-3 text-4xl font-bold sm:text-5xl">Three core services for technology-driven growth</h1>
           <p className="mt-4 max-w-4xl text-base text-muted sm:text-lg">
-            Layanan disusun fleksibel mengikuti skala usaha, dengan pendekatan praktis dan hasil yang terukur untuk
-            membantu bisnis lebih siap tumbuh.
+            Our delivery model is tailored to your product stage and team capacity, with measurable outcomes and
+            practical implementation.
           </p>
         </section>
 
         <section className="mt-8 grid gap-4 lg:grid-cols-3">
           <article className="premium-card overflow-hidden rounded-2xl border border-border/70 bg-card/50 lg:col-span-2">
             <Image
-              src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1500&q=80"
-              alt="Kegiatan konsultasi layanan bisnis"
+              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1500&q=80"
+              alt="Technology consulting workshop"
               width={1500}
               height={900}
               className="h-72 w-full object-cover"
             />
           </article>
           <article className="premium-card float-soft rounded-2xl border border-border/70 bg-card/50 p-6 backdrop-blur-xl">
-            <h2 className="text-xl font-bold">Kenapa klien memilih kami?</h2>
+            <h2 className="text-xl font-bold">Why teams choose us</h2>
             <ul className="mt-3 space-y-2 text-sm text-muted">
-              <li>• Respons cepat dan jalur komunikasi jelas.</li>
-              <li>• Pendampingan tidak hanya administratif, tapi juga edukatif.</li>
-              <li>• Proses dokumentasi rapi untuk audit dan evaluasi.</li>
+              <li>• Fast response time and clear communication channels.</li>
+              <li>• Hands-on guidance from strategy to implementation.</li>
+              <li>• Structured documentation for visibility and governance.</li>
             </ul>
           </article>
         </section>
@@ -81,18 +81,18 @@ export default async function ServicesPage() {
                 ))}
               </ul>
               <Link href="/contact" className="premium-link mt-5 inline-block text-sm font-semibold text-foreground">
-                Konsultasi Sekarang
+                Schedule a Consultation
               </Link>
             </article>
           ))}
         </section>
 
         <section className="mt-8 rounded-3xl border border-border/70 bg-card/50 p-8 backdrop-blur-xl">
-          <h2 className="text-2xl font-bold sm:text-3xl">Cara Kerja Layanan</h2>
+          <h2 className="text-2xl font-bold sm:text-3xl">How We Work</h2>
           <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {workflow.map((item, index) => (
               <article key={item} className="premium-card rounded-2xl border border-border/70 bg-background/50 p-5">
-                <p className="text-xs uppercase tracking-widest text-primary">Tahap {index + 1}</p>
+                <p className="text-xs uppercase tracking-widest text-primary">Stage {index + 1}</p>
                 <p className="mt-2 text-sm text-muted">{item}</p>
               </article>
             ))}
