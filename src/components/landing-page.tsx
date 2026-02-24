@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { RubikHeroCube } from '@/components/rubik-hero-cube';
 import { ScrollFloat, ScrollReveal, ShinyText, SplitText } from '@/components/text-animations';
 import { ThemeToggle } from '@/components/theme-toggle';
+import { useHeaderActivity } from '@/components/use-header-activity';
 import { CompanyContent } from '@/types/content';
 
 type LandingPageProps = {
@@ -14,6 +15,7 @@ type LandingPageProps = {
 };
 
 export function LandingPage({ content }: LandingPageProps) {
+  const isHeaderVisible = useHeaderActivity(3200);
   const storyRef = useRef<HTMLDivElement | null>(null);
   const { scrollY, scrollYProgress } = useScroll();
   const blobYLeft = useTransform(scrollY, [0, 1600], [0, -130]);
@@ -255,7 +257,11 @@ export function LandingPage({ content }: LandingPageProps) {
       />
 
       <section className="mx-auto w-full max-w-[92rem] px-4 pb-24 pt-8 sm:px-8 lg:px-12">
-        <nav className="mb-12 flex items-center justify-between rounded-2xl border border-border/60 bg-card/50 px-4 py-4 shadow-glass backdrop-blur-xl sm:px-6">
+        <nav
+          className={`fixed left-1/2 top-4 z-40 flex w-[calc(100%-2rem)] max-w-[92rem] -translate-x-1/2 items-center justify-between rounded-2xl border border-border/60 bg-card/50 px-4 py-4 shadow-glass backdrop-blur-xl transition-all duration-300 sm:px-6 ${
+            isHeaderVisible ? 'translate-y-0 opacity-100' : '-translate-y-5 opacity-0 pointer-events-none'
+          }`}
+        >
           <p className="text-base font-bold tracking-wide sm:text-lg">Your Company</p>
           <div className="flex items-center gap-4">
             <Link href="/about" prefetch={false} className="premium-link wavy-link hidden text-base text-muted md:block">
@@ -273,6 +279,7 @@ export function LandingPage({ content }: LandingPageProps) {
             <ThemeToggle />
           </div>
         </nav>
+        <div className="mb-12 h-16 sm:h-20" aria-hidden="true" />
 
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <motion.div
